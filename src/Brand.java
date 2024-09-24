@@ -1,8 +1,8 @@
 public class Brand extends Category{
     String BrandName;
-    Brand(int id,String proname,double price,int cid,String Cname,String Brandname){
-        super(id,proname,price,cid,Cname);
-        BrandName=name;
+    Brand(int id,String Proname,double price,int cid,String catname,String Brandname){
+        super(id,Proname,price,cid,catname);
+        BrandName=Brandname;
     }
     @Override
     public void Display() {
