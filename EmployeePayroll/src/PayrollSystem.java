@@ -32,11 +32,11 @@ public class PayrollSystem {
             System.out.println("Enter employee Name: ");
             String name = sc.next();
             System.out.println("Enter daily Wages: ");
-            float basicSalary = sc.nextFloat();
+            float dailyWages = sc.nextFloat();
             System.out.println("No of Days Worked ");
-            int pf = sc.nextInt();
+            int noofDays = sc.nextInt();
 
-            TemporaryEmployee temEmp = new TemporaryEmployee(id, name, 7000, 80);
+            TemporaryEmployee temEmp = new TemporaryEmployee(id, name, dailyWages , noofDays);
             temEmp.calculateBonus();
             temEmp.calculateNetSalary();
             System.out.println("Below is the temporary Employee details;");
